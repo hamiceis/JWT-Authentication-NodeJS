@@ -1,0 +1,32 @@
+# @name GetPosts
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTmF0YWxpYSIsImlhdCI6MTY5NTU0MDgyMiwiZXhwIjoxNjk1NTQxNDIyfQ.pNGjcmfn_-Kz7O5ibMxMmUIHC2r7TMKavxdAAuigcdI
+
+###
+
+# @name PostLogin
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "username": "Debora"
+}
+
+### 
+
+#
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTmF0YWxpYSIsImlhdCI6MTY5NTU0MDc4M30.HUyfhAxuZOO2aRiSyPu5bmmbNIoWqWicoF8m39-tzfE"
+}
+###
+
+#
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+  "username": "Natalia"
+}
